@@ -7,7 +7,6 @@ import {
   Filter, 
   Edit, 
   Trash2, 
-  Eye,
   Package,
   AlertTriangle
 } from 'lucide-react';

@@ -37,7 +37,7 @@ const Dashboard = () => {
         setStats({
           products: productStats.data.data,
           transactions: transactionStats.data.data
-        });
+        }); 
         setRecentProducts(products.data.data);
         setRecentTransactions(transactions.data.data);
       } catch (error) {

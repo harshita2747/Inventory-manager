@@ -1,3 +1,5 @@
+
+
 require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
@@ -21,7 +23,7 @@ const app = express();
 app.use(helmet());
 app.use(morgan('combined'));
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://localhost:5174'],
+  origin: ['http://localhost:5173', 'http://localhost:5000'],
   credentials: true
 }));
 app.use(express.json());
@@ -42,6 +44,7 @@ app.get('/', (req, res) => {
 });
 
 
+
 // 404 handler
 app.use(notFound);
 
@@ -52,6 +55,8 @@ app.use(errorHandler);
 app.use('*', (req, res) => {
   res.status(404).json({ message: 'Route not found' });
 });
+
+
 
 // Database connection
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/inventory_management')
@@ -69,3 +74,5 @@ app.listen(PORT, () => {
 });
 
 module.exports = app;
+
+
