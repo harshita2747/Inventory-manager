@@ -23,7 +23,8 @@ const app = express();
 app.use(helmet());
 app.use(morgan('combined'));
 app.use(cors({
-  origin: ['http://localhost:5173', 'http://localhost:5000'],
+  // origin: "['http://localhost:5173', 'http://localhost:5000']",
+  origin:"*",
   credentials: true
 }));
 app.use(express.json());
@@ -67,11 +68,11 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/inventory
     console.error('MongoDB connection error:', error);
   });
 
-const PORT = process.env.PORT || 5000;
+// const PORT = process.env.PORT || 5000;
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-});
+// app.listen(PORT, () => {
+//   console.log(`Server running on port ${PORT}`);
+// });
 
 module.exports = app;
 
