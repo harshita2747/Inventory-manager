@@ -1,14 +1,23 @@
 {
   "name": "inventory-management-frontend",
   "private": true,
-  "version": "1.0.0",
-  "type": "module",
+  // "version": "1.0.0",
+  // "type": "module",
+  // "scripts": {
+  //   "dev": "vite",
+  //   "build": "vite build",
+  //   "lint": "eslint .",
+  //   "preview": "vite preview"
+  // },
+
+    "version": "1.0.0",
+  "main": "backend/index.js",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
+    "dev": "nodemon backend/index.js",       // local dev
+    "build": "echo 'No build needed'",      // required by Vercel
+    "start": "node backend/index.js"   
   },
+
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
     "axios": "^1.12.2",
