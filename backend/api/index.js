@@ -9,13 +9,13 @@ const morgan = require('morgan');
 
 
 // Import routes
-const authRoutes = require('./routes/authRoutes');
-const productRoutes = require('./routes/productRoutes');
-const userRoutes = require('./routes/userRoutes');
-const transactionRoutes = require('./routes/transactionRoutes');
+const authRoutes = require('../routes/authRoutes');
+const productRoutes = require('../routes/productRoutes');
+const userRoutes = require('../routes/userRoutes');
+const transactionRoutes = require('../routes/transactionRoutes');
 
 // Import middleware
-const { errorHandler, notFound } = require('./middlewares/errorMiddleware');
+const { errorHandler, notFound } = require('../middlewares/errorMiddleware');
 
 const app = express();
 
