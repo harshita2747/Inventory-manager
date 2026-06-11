@@ -1,6 +1,6 @@
 # Inventory Management System
 
-A full-stack MERN (MongoDB, Express, React, Node.js) Inventory Management System with modern UI, comprehensive features, and role-based access control.
+Developed a production-ready Inventory Management System using MongoDB, Express.js, React.js, and Node.js. Implemented JWT-based authentication, role-based authorization, inventory and transaction tracking, low-stock monitoring, dashboard insights, and RESTful APIs. Successfully deployed the application using Vercel with MongoDB Atlas for cloud database management.
 
 ## 🔗 Live Demo
 
@@ -55,6 +55,11 @@ https://inventory-frontend-eight-virid.vercel.app
 - **Forms**: React Hook Form
 - **Icons**: Lucide React
 - **Notifications**: React Hot Toast
+
+ ## ☁️ Deployment
+Frontend: Vercel
+Backend API: Vercel
+Database: MongoDB Atlas
 
 ## 📋 Prerequisites
 
