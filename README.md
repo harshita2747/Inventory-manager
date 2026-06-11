@@ -2,6 +2,10 @@
 
 A full-stack MERN (MongoDB, Express, React, Node.js) Inventory Management System with modern UI, comprehensive features, and role-based access control.
 
+## 🔗 Live Demo
+
+https://inventory-frontend-eight-virid.vercel.app
+
 ## 🚀 Features
 
 ### Backend (Node.js/Express)
@@ -387,20 +391,5 @@ For support and questions:
 - **API Rate Limiting**: Request throttling
 - **Audit Logging**: Comprehensive activity logs
 
-## 🎯 Getting Started Checklist
-
-- [ ] Install Node.js and MongoDB
-- [ ] Clone the repository
-- [ ] Set up backend environment variables
-- [ ] Install backend dependencies
-- [ ] Start backend server
-- [ ] Set up frontend environment variables
-- [ ] Install frontend dependencies
-- [ ] Start frontend development server
-- [ ] Create initial admin user
-- [ ] Test all features
-- [ ] Deploy to production (optional)
-
----
 
 **Happy Coding! 🚀** 
